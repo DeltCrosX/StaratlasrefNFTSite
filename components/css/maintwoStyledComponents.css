@@ -1473,3 +1473,9 @@ footer a {
         height: 25%;
     }
 }
+
+.position {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
