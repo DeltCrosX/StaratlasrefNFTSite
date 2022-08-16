@@ -1502,7 +1502,3 @@ footer a {
 ::-webkit-scrollbar-thumb:hover {
     background: #303132;
 }
- 
-html body {
-    width: 100%;
-}
