@@ -1,0 +1,6 @@
+{
+    "styleMain":"../css/mainStyleComponents.css",
+    "styleModuleDir": "../css/module/**/*/{.css}",
+    "scriptMain": "../js/indexScriptFile.js",
+    "scriptModuleDir": "../js/module/**/*/{.js}"
+}
