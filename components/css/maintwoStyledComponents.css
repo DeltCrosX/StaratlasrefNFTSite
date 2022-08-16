@@ -1461,3 +1461,15 @@ footer a {
         transform: rotate(360deg);
     }
 }
+
+#aligncenter {
+    width: 25%;
+    height: 15%;
+}
+
+@media screen and (max-width: 977px) {
+    #aligncenter {
+        width: 35%;
+        height: 25%;
+    }
+}
