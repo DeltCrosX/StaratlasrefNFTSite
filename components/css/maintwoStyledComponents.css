@@ -1517,3 +1517,17 @@ footer a {
 .button:hover {
     box-shadow: -6px -6px 12px #505152, 6px 6px 12px #373737;
 }
+
+.invisibleonviewportdesktop {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .invisibleonviewportdesktop {
+        visibility: visible;
+    }
+}
+
+.connectwalletlibackground {
+    background: #e8e8e8;
+}
