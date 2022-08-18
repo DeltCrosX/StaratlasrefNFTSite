@@ -1613,7 +1613,14 @@ section {
     background:rgb(30, 30, 30);
     border-radius: 20px;
     color:rgb(235, 235, 235);
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentCard {
+        flex-wrap: wrap;
+    }
 }
 
 .miniGameProfile {
@@ -1740,4 +1747,15 @@ section {
     100% {
         transform: scale(1);
     }
+}
+
+.adjustScreenCenter {
+    text-align: center;
+    align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.disableOverflow {
+    overflow-clip-margin: 10px;
 }
