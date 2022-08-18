@@ -1082,7 +1082,7 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: fill;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -1530,4 +1530,214 @@ footer a {
 
 .connectwalletlibackground {
     background: #e8e8e8;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid brown;
+    rotate: 90deg;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    background-color: transparent;
+}
+
+.divider {
+    position: relative;
+    height: 1px;
+}
+
+.divider:before {
+    left: 0;
+    right: 0;
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+.divider:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: darkslategray;
+    border-bottom: 1px solid rgb(48, 49, 51);
+    border-right: 1px solid rgb(48, 49, 51);
+}
+
+.copyIPContainer {
+    cursor: default;
+    width: 50%;
+    height: 4em;
+    border: 1px solid rgb(235, 235, 235);
+    margin: 50px auto;
+    padding: 0 10px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 30px -13px rgb(87, 87, 87);
+}
+
+.contentSwapSec {
+    padding-top: 20px;
+    height: auto;
+    position: relative;
+}
+
+.contentMainContainer {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    gap: 5%;
+}
+
+.contentCard {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:rgb(30, 30, 30);
+    border-radius: 20px;
+    color:rgb(235, 235, 235);
+    margin: 40px;
+}
+
+.miniGameProfile {
+    height: 170px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.miniGameCard .miniGameContent {
+    padding: 30px;
+}
+
+.contentCard p {
+    text-align: left;
+    font-size: 16px;
+}
+
+#txtField {
+    width: 75%;
+    font-weight: 600;
+    border: none;
+    font-size: 1.3em;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    color: #66645f;
+}
+
+#txtField::selection {
+    color: none;
+    background: none;
+}
+
+.copyIPContainer .fa-link {
+    color: #b4afa6;
+    width: 10%;
+}
+
+.verticalDevider {
+    width: 1px;
+    height: 50%;
+    background-color: #b4afa67a;
+}
+
+.copyIPContainer button {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 15%;
+    height: 85%;
+    font-size: 1.3em;
+    background-color: #ffa600ef;
+    color: #ffffff;
+    border: none;
+    position: relative;
+}
+
+.copyIPContainer button i {
+    height: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.joinSec {
+    perspective: 1px;
+    background: none;
+    height: 500px;
+    padding-top: 70px;
+}
+
+.fa-check {
+    transform: scale(0);
+}
+
+.copied {
+    animation: copy 0.3s linear forwards;
+}
+
+.copied .fa-clone {
+    animation: copyIcon 0.3s linear forwards;
+}
+
+.copied .fa-check {
+    animation: checkIcon 0.3s 0.3s linear forwards;
+}
+
+@keyframes copy {
+    33.33% {
+        transform: scale(0.8);
+    }
+
+    66.67% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: #00ff40ef;
+    }
+}
+
+@keyframes copyIcon {
+    33.33% {
+        transform: scale(1);
+    }
+
+    66.67% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes checkIcon {
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
