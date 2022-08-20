@@ -10,6 +10,11 @@
     -webkit-touch-callout: none;
 }
 
+* {
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -144,6 +149,14 @@ html {
 .athiti-600 {
     font-family: Athiti, sans-serif;
     font-weight: 600;
+}
+
+html:lang(TH) {
+    font-family: Athiti, sans-serif;
+}
+
+html:lang(EN) {
+    font-family: Rajdhani, sans-serif;
 }
 
 /*style components*/
@@ -1158,7 +1171,6 @@ nav .nav-btn:hover:before {
         height: 12em;
         overflow-y: scroll;
     }
-
     nav .menu {
         position: absolute;
         top: 4.7em;
@@ -2489,3 +2501,36 @@ button {
 }
 
 /*What the fuck is this class (end)*/
+
+/*button2077 begin*/
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+:root {
+    --yellow-color: #fcee09;
+    --red-color: #ff003c;
+    --black-color: #050a0e;
+    --blue-color: #00f0ff;
+    --white-color: #fafafa;
+}
+
+.btn {
+    background: #252627;
+    color: #FFF;
+    padding: 0.5% 2%;
+    border: 1px #DFDFDF solid;
+    border-radius: 2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: light;
+    text-decoration: none;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #505152, -6px -6px 12px #373737;
+}
+
+.btn:hover {
+    border: 1px #252627 dashed;
+    background: #FFF;
+    color: #252627;
+}
+/*button2077 ends

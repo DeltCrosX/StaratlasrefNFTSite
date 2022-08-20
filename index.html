@@ -23,7 +23,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./components/css/maintwoStyledComponents.css?v=5">
+        <link rel="stylesheet" href="./components/css/maintwoStyledComponents.css?v=6">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <src language="javascript" type="text/css" src="./components/js/module/mainscript.js"></src>
         <title>Avalon | Home</title>
@@ -73,6 +73,42 @@
                 </ul>
             </div>
         </nav>
+        <script>
+            let section = document.getElementByClassName('.section');
+            const makeNavLinksSmooth = () => {
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                for (let n in navLinks) {
+                    if (navLinks.hasOwnProperty(n)) {
+                        navLinks[n].addEventListener('click', e => {
+                            e.preventDefault();
+                            document.querySelector(navLinks[n].hash)
+                                .scrollIntoView({
+                                    behavior: "smooth"
+                                });
+                        });
+                    }
+                }
+            }
+
+            const spyScrolling = () => {
+                const sections = document.querySelectorAll('.hero-bg');
+
+                window.onscroll = () => {
+                    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+                    for (let s in sections)
+                        if (sections.hasOwnProperty(s) && sections[s].offsetTop <= scrollPos) {
+                            const id = sections[s].id;
+                            document.querySelector('.active').classList.remove('active');
+                            document.querySelector(`a[href*=${id}]`).parentNode.classList.add('active');
+                        }
+                }
+            }
+
+            makeNavLinksSmooth();
+            spyScrolling();
+        </script>
         <video id="background-video" autoplay muted loop poster="./assets/videoposter.PNG">
             <source src="./assets/BG.mp4" type="video/mp4">
         </video>
@@ -92,6 +128,10 @@
                 });
             </script>
             -->
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 2em; margin-bottom: 0em;">
+                <a href="#trailer" class="button saira-400" style="text-decoration: none;">Watch Trailer</a>
+            </div>
+            
         </main>
 
         <section class="contentSwapSec saira-400" id="secFour">
@@ -139,7 +179,7 @@
             </div>
         </section>
 
-        <section class="contentSwapSec marginbottom saira-400" id="secFour trailer">
+        <section class="contentSwapSec marginbottom saira-400" id="trailer">
             <h1>TRAILER</h1>
             <div class="divider marginbottom"></div>
             <div class="contentMainContainer">
