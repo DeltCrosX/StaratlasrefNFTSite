@@ -24,6 +24,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./components/css/maintwoStyledComponents.css?v=6">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <src language="javascript" type="text/css" src="./components/js/module/mainscript.js"></src>
         <title>Avalon | Home</title>
@@ -128,7 +130,11 @@
         <video id="background-video" autoplay muted loop poster="./assets/videoposter.PNG">
             <source src="./assets/BG.mp4" type="video/mp4">
         </video>
+
+
         <main class="container-main pdt1 saira-400">
+            <section class="styleSidebar">
+                <span style="box-sizing:border-box; display:block; overflow:hidden; width:initial; height:initial; background: none; opacity: 1; border: 0; margin:0; padding: 0; position: absolute; top: 0; left: 0; bottom:0; right: 0;"></span>
             <div>
                 <img src="./assets/Logo1.png" id="aligncenter" width="auto" height="15%" style="margin-top: 50px;" alt="">
             </div>
@@ -147,26 +153,23 @@
             <div style="display: flex; align-items: center; justify-content: center; margin-top: 2em; margin-bottom: 0em;">
                 <a href="#trailer" class="button saira-400" style="text-decoration: none;">Watch Trailer</a>
             </div>
-            
+        </section>
         </main>
 
-        <section class="contentSwapSec saira-400" id="secFour">
-            <h1>OUR CONTENTS</h1>
+        <section class="cardCollect saira-400">
+                <div class="HomeAbout">
+                    <h1>OUR CONTENTS</h1>
             <div class="divider"></div>
-            <div class="contentMainContainer">
-                <div class="contentCard">
-                    
-                    <img src="./assets/unnamed.png" alt="Partner Realm" class="miniGameProfile" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
-                    
-                    <div class="minigameContent">
-                        <h3 class="miniGameTitle">Core Realm: Summoners World</h3>
-                        <p class="miniGameDes">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna.
-                        </p>
-                    </div>
-                </div>
-        
+            <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bx-world'></i>
+                <span class="logo_name">Discover</span>
+            </div>
+        </div>
+</div>
+    </section>
+
+        <section class="contentSwapSec saira-400" id="secFour">
                 <div class="contentCard">
                     <div class="minigameContent">
                         <h3 class="miniGameTitle">Partner Realm: Healthverse Island</h3>
@@ -176,12 +179,12 @@
                         </p>
                     </div>
                     
-                    <img src="./assets/unnamed.png" alt="Partner Realm" class="miniGameProfile" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
+                    <!-- <img src="./assets/unnamed.png" alt="Partner Realm" class="miniGameProfile" style="width: auto; height: auto; max-width: 100%; max-height: 100%;"> -->
                     
                 </div>
                 <div class="contentCard">
                     
-                    <img src="./assets/unnamed.png" alt="Partner Realm" class="miniGameProfile" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
+                    <!-- <img src="./assets/unnamed.png" alt="Partner Realm" class="miniGameProfile" style="width: auto; height: auto; max-width: 100%; max-height: 100%;"> -->
                     
                     <div class="minigameContent">
                         <h3 class="miniGameTitle">About Avalon</h3>

@@ -1809,7 +1809,7 @@ details {
     margin-bottom: 30px;
 }
 
-/*What the fuck is this class (Begin)*/
+/*Logo nav & AVALON (Begin)*/
 .cYZgnB {
     transition: all 300ms ease-in-out 0s;
     cursor: pointer;
@@ -1884,7 +1884,7 @@ details {
 
 .gAVGXQ> :not(style)~ :not(style) {
     margin-top: 0px;
-    margin-inline: 8px 0px;
+    margin-inline: 15px 0px;
     margin-bottom: 0px;
 }
 
@@ -1907,7 +1907,7 @@ details {
 }
 
 .jpauqH {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .cYZgnB:hover {
@@ -2008,6 +2008,8 @@ button {
 .PHzlS {
     margin-top: -2px;
 }
+
+/*Button Color Palete*/
 
 @keyframes jgqpio {
     0% {
@@ -2447,6 +2449,8 @@ button {
 
 }
 
+/*Button Color Palete End*/
+
 .bIzHRG:focus-visible {
     outline-width: 3px;
     outline-color: rgb(21 21 22 / 25%);
@@ -2500,7 +2504,7 @@ button {
     height: 72px;
 }
 
-/*What the fuck is this class (end)*/
+/* Logo nav & AVALON (end)*/
 
 /*button2077 begin*/
 @import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
@@ -2533,4 +2537,60 @@ button {
     background: #FFF;
     color: #252627;
 }
-/*button2077 ends
+/*button2077 ends*/
+
+.cardCollect {
+    position: relative;
+    height: 100%;
+    min-height: 650px;
+} 
+
+.cardCollect {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+} 
+
+/*SideBar Start*/
+.sidebar {
+    position: absolute;
+    margin-top: 32px;
+    left: 0;
+    height: 90vh;
+    width: 260px;
+    display: grid;
+    gap: 16px;
+    background: #252830;
+}
+
+.sidebar .logo-details {
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar .logo-details i {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
+.sidebar .logo-details .logo_name {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
+
+
+.HomeAbout > :not(style) ~ :not(style) {
+    margin-top: 32px;
+    margin-inline: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/*SideBar End*/
