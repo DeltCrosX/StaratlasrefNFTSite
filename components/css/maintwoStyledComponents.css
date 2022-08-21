@@ -1095,7 +1095,7 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -2534,3 +2534,4 @@ button {
     color: #252627;
 }
 /*button2077 ends
+
