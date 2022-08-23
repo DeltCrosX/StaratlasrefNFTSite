@@ -161,7 +161,7 @@
                 <div class="HomeAbout">
                     <h1>OUR CONTENTS</h1>
             <div class="divider"></div>
-            <div class="sidebar close">
+            <div class="sidebar">
             <div class="logo-details">
                 <i class='bx bx-world'></i>
                 <span class="logo_name">Discover</span>
@@ -173,9 +173,9 @@
                             <i class='bx bx-collection'></i>
                             <span class="link_name">Category</span>
                         </a>     
-                        <i class='bx bx-chevron-down'></i>
+                        <i class='bx bx-chevron-down arrow'></i>
                     </div>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu getElementByClassName">
                         <li><a class="link_name" href="#">Category</a></li>
                         <li><a href="#">Education</a></li>
                         <li><a href="#">Work</a></li>
@@ -195,7 +195,18 @@
             </div>
             </div>
     </section>
-
+<!--Arrow down-up-->
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e)=> {
+                let arrowParent = e.target.parentElement.parentElement;
+                console.log(arrowParent);
+                arrowParent.classList.toggle("showMenu");
+            });    
+        }
+    </script>
+<!--Arrow down-up End-->
         <section class="contentSwapSec saira-400" id="secFour">
                 <div class="contentCard">
                     <div class="minigameContent">
